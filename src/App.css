@@ -1,38 +1,129 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+h2 {
+  margin: 70px 0 0px;
+  text-align: center;
+  color: #f05907;
+  font-weight: bold;
+}
+
+h6 {
+  text-align: center;
+  margin: 20px 0 50px;
+  color: chocolate;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 630px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 5px;
+  list-style: none;
+  border: 1px solid #2f70e1;
+  width: 200px;
+  position: relative;
+  align-self: end;
+}
+
+.card {
+  background: #F4E1BA;
+  border: 0;
+}
+
+.div-name {
+  flex: 1;
+  display: flex;
+  margin: 10px 0;
+}
+
+.card-warn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(240, 89, 7, 0.82);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.absolute-qtd {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background: chocolate;
+  color: white;
+  padding: 3px 5px;
+  border-radius: inherit;
+  font-size: 0.8em;
+}
+
+.card-warn > span {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+}
+
+.active {
+  color: white;
+}
+.active button {
+  background: white;
+  color: #EF3434;
+}
+.active button, .active span {
+  z-index: 9999;
+}
+
+.notactive {
+  color: #f05907;
+}
+.notactive button {
+  color: #fff;
+  background: #f05907;
+}
+
+button {
+  padding: 5px;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15), -1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+button:focus {
+  outline: 0;
+}
+
+.author {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 14px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inspiration {
+  text-align: center;
+  font-size: 14px;
 }
