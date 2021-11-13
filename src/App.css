@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 
 h2 {
-  margin: 70px 0 0px;
+  margin: 70px 35px 0px;
   text-align: center;
   color: #f05907;
   font-weight: bold;
@@ -29,9 +29,13 @@ li {
   margin: 10px 5px;
   list-style: none;
   border: 1px solid #2f70e1;
-  width: 200px;
+  width: 150px;
   position: relative;
   align-self: end;
+}
+
+.new-button {
+  margin-bottom: 5px;
 }
 
 .card {

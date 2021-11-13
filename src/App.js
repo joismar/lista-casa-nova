@@ -127,7 +127,7 @@ class SingleWish extends React.Component  {
           <div className="div-name">
             <span className="card-name">{wish.name}</span>
           </div>
-          {(wish.dsp < wish.qty && wish.dsp !== 0) ? <button onClick={() => this.props.removeWish(wish.id)}>REMOVER RESERVA</button> : ''}
+          {(wish.dsp < wish.qty && wish.dsp !== 0) ? <button className="new-button" onClick={() => this.props.removeWish(wish.id)}>REMOVER RESERVA</button> : ''}
           <button onClick={() => this.props.addWish(wish.id)}>{(wish.status && wish.dsp > 0) ? 'RESERVAR' : 'REMOVER RESERVA'}</button>
         </li>
       );
